@@ -1,0 +1,5 @@
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogDetail\bin\Debug\MsLogDetail.exe.config
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogDetail\bin\Debug\MsLogDetail.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogDetail\bin\Debug\MsLogDetail.pdb
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogDetail\obj\Debug\MsLogDetail.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogDetail\obj\Debug\MsLogDetail.pdb

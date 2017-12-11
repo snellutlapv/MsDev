@@ -1,0 +1,6 @@
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\bin\Debug\MsDiagnosis.exe.config
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\bin\Debug\MsDiagnosis.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\bin\Debug\MsDiagnosis.pdb
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\obj\Debug\MsDiagnosis.csprojResolveAssemblyReference.cache
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\obj\Debug\MsDiagnosis.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsDiagnosis\obj\Debug\MsDiagnosis.pdb

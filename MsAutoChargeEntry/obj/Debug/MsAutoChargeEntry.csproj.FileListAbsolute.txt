@@ -1,0 +1,5 @@
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsAutoChargeEntry\bin\Debug\MsAutoChargeEntry.exe.config
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsAutoChargeEntry\bin\Debug\MsAutoChargeEntry.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsAutoChargeEntry\bin\Debug\MsAutoChargeEntry.pdb
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsAutoChargeEntry\obj\Debug\MsAutoChargeEntry.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsAutoChargeEntry\obj\Debug\MsAutoChargeEntry.pdb

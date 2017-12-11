@@ -1,0 +1,6 @@
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\bin\Debug\MsList.exe.config
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\bin\Debug\MsList.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\bin\Debug\MsList.pdb
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\obj\Debug\MsList.exe
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\obj\Debug\MsList.pdb
+C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsListManager\obj\Debug\MsList.csprojResolveAssemblyReference.cache
