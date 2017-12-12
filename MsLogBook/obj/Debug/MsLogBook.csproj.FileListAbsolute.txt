@@ -4,3 +4,6 @@ C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogBook\bin\Debug\MsLogBook.
 C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogBook\obj\Debug\MsLogBook.csprojResolveAssemblyReference.cache
 C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogBook\obj\Debug\MsLogBook.exe
 C:\Source\DevR&D\Innovation\PVMicroServices\MSDev\MsLogBook\obj\Debug\MsLogBook.pdb
+C:\Source\git\MsDev\MsLogBook\bin\Debug\MsLogBook.exe.config
+C:\Source\git\MsDev\MsLogBook\obj\Debug\MsLogBook.exe
+C:\Source\git\MsDev\MsLogBook\obj\Debug\MsLogBook.pdb
