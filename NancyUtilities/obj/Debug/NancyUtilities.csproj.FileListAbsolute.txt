@@ -1,0 +1,6 @@
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\bin\Debug\NancyUtilities.dll
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\bin\Debug\NancyUtilities.pdb
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\bin\Debug\Nancy.dll
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\bin\Debug\Nancy.xml
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\obj\Debug\NancyUtilities.dll
+C:\Source\DevR&D\Innovation\MsMonitorService\NancyUtilities\obj\Debug\NancyUtilities.pdb
