@@ -43,6 +43,7 @@ namespace MsLogDetail
         public DateTime TimeIn;
         public DateTime? TimeOut;
     }
+
     public class HomeModule : NancyModule
     {
         protected static string MyNameSpace = "PV.Data.Standard.DataManagers";
@@ -53,12 +54,6 @@ namespace MsLogDetail
             Get["GetLogDetail/{logDetailPk}&{environment}"] = parameters =>
             {
                 var results = GetLogDetail(parameters.logDetailPk, parameters.environment);
-                return new JsonResponse(results, new DefaultJsonSerializer());
-
-            };
-            Get["GetProtocolInfoForLogDetailPk/{logDetailPk}&{environment}"] = parameters =>
-            {
-                var results = GetProtocolInfoForLogDetailPk(parameters.logDetailPk, parameters.environment);
                 return new JsonResponse(results, new DefaultJsonSerializer());
 
             };
@@ -82,28 +77,5 @@ namespace MsLogDetail
 
             }
         }
-
-        private object GetProtocolInfoForLogDetailPk(string logDetailPk, string environment)
-        {
-            Guid logDetailPkGuid;
-            if (!Guid.TryParse(logDetailPk, out logDetailPkGuid))
-            {
-                return null;
-            }
-
-            var typedView = new LogDetailProtocolInfoTypedView();
-            var filter = new RelationPredicateBucket();
-            filter.PredicateExpression.Add(LogDetailProtocolInfoFields.LogDetailPk == logDetailPkGuid);
-
-
-            using (IDataAccessAdapter adapter = AdapterFactory.CreateAdapter(MyNameSpace, environment))
-            {
-                adapter.FetchTypedView(typedView.GetFieldsInfo(), typedView, filter, 0, true);
-            }
-
-            return typedView;
-        }
-
-        
     }
 }

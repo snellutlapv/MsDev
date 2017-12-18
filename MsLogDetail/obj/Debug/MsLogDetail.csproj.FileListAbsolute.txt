@@ -86,3 +86,5 @@ C:\Source\git\MsDev\MsLogDetail\bin\Debug\DocStorage.External.DataModel.pdb
 C:\Source\git\MsDev\MsLogDetail\bin\Debug\HL7Entities.pdb
 C:\Source\git\MsDev\MsLogDetail\obj\Debug\MsLogDetail.exe
 C:\Source\git\MsDev\MsLogDetail\obj\Debug\MsLogDetail.pdb
+C:\Source\git\MsDev\MsLogDetail\obj\Debug\MsLogDetail.csprojResolveAssemblyReference.cache
+C:\Source\git\MsDev\MsLogDetail\bin\Debug\NancyUtilities.dll

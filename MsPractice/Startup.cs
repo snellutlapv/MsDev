@@ -6,6 +6,7 @@ using Nancy.Bootstrapper;
 using Nancy.Json;
 using Nancy.Owin;
 using Nancy.TinyIoc;
+using NancyUtilities;
 using Owin;
 
 [assembly: OwinStartup(typeof(MsPractice.Startup))]
@@ -30,6 +31,15 @@ namespace MsPractice
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
         {
             JsonSettings.MaxJsonLength = Int32.MaxValue;
+        }
+
+        protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
+        {
+            var hostname = context.Request.Url.HostName;
+            var port = context.Request.Url.Port;
+            var sqlSpCmd = "SHMS.dbo.CreateOnlyIfNewServiceInfo";
+            var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SHMS"].ConnectionString;
+            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, hostname, (port ?? 0).ToString(), "ServicesList");
         }
     }
 }

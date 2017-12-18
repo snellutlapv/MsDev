@@ -24,6 +24,8 @@ namespace MsPractice
             var host = new NancyHost(new Uri(url), new CustomBootstrapper(), config);
             host.Start();
 
+            CustomBootstrapper.LoadInstanceInfoToDb(url);
+
             Console.WriteLine("{0} Running on {1}", serviceName, url);
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();

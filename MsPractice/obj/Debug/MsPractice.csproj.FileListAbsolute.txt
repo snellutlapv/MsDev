@@ -82,3 +82,4 @@ C:\Source\git\MsDev\MsPractice\bin\Debug\DocStorage.External.DataModel.pdb
 C:\Source\git\MsDev\MsPractice\bin\Debug\HL7Entities.pdb
 C:\Source\git\MsDev\MsPractice\obj\Debug\MsPractice.exe
 C:\Source\git\MsDev\MsPractice\obj\Debug\MsPractice.pdb
+C:\Source\git\MsDev\MsPractice\bin\Debug\NancyUtilities.dll
