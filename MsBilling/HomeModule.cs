@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Timers;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Nancy;
+using NancyUtilities;
 using Nancy.Responses;
 using PV.App.Managers.Standard;
 using PV.App.Managers.Standard.Helpers;
-using PV.Data.DataModel.PatientFlow;
 using PV.Data.Standard.EntityClasses;
 using PV.Data.Standard.HelperClasses;
 using SD.LLBLGen.Pro.ORMSupportClasses;
@@ -46,16 +44,55 @@ namespace MsBilling
 
     public class HomeModule : NancyModule
     {
+        private string _methodName;
+        private string _methodAction;
+        private string _query;
+        private string _requestor;
+        private Timer _timer = new Timer();
+        private string _serviceDomainUrl;
+
+        private void UpdateActionParams(string methodname, string action)
+        {
+            _methodAction = action;
+            _methodName = methodname;
+        }
+
+        private string conn = System.Configuration.ConfigurationManager.ConnectionStrings["SHMS"].ConnectionString;
         protected static string MyNameSpace = "PV.Data.Standard.DataManagers";
 
         public HomeModule()
         {
+            Before += (ctx) =>
+            {
+                _serviceDomainUrl = ctx.Request.Url.HostName;
+                _query = ctx.Request.Path;
+                _requestor = ctx.Request.Headers.Referrer;
+                _timer.Start();
+                return null;
+            };
+
+            After += _ =>
+            {
+                _timer.Stop();
+
+                LogServerInstance.UpdateDbWithServerLog(
+                    conn,
+                    _serviceDomainUrl,
+                    "MsLogDetail",
+                    _methodName,
+                    _methodAction,
+                    _requestor,
+                    _query,
+                    _timer.Interval.ToString()
+                );
+            };
+
             Get["/"] = _ => "Billing";
             Get["GetPatBilling/{practice}&{patNum}"] = parameters =>
             {
+                UpdateActionParams("GetPatBilling", "Get");
                 var results = GetPatBilling(parameters.practice, parameters.patNum);
                 return new JsonResponse(results, new DefaultJsonSerializer());
-
             };
         }
 

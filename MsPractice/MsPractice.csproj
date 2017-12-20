@@ -62,7 +62,8 @@
       <HintPath>..\packages\Nancy.Owin.1.4.1\lib\net40\Nancy.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NancyUtilities">
+    <Reference Include="NancyUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\NancyUtilities.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -73,83 +74,17 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PV.API.Common">
-      <HintPath>..\lib\PV.API.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.API.Common.Managers">
-      <HintPath>..\lib\PV.API.Common.Managers.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.App.Managers.Standard">
+    <Reference Include="PV.App.Managers.Standard, Version=18.1.710.1208, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\PV.App.Managers.Standard.dll</HintPath>
     </Reference>
-    <Reference Include="PV.AutoChargeEntry.DataModel">
-      <HintPath>..\lib\PV.AutoChargeEntry.DataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.AutoChargeEntry.DataModel.POCOs">
-      <HintPath>..\lib\PV.AutoChargeEntry.DataModel.POCOs.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.DataModel">
-      <HintPath>..\lib\PV.Data.DataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Integrations, Version=1.0.6554.28668, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Integrations.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Integrations.DBSpecific, Version=1.0.6554.28668, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Integrations.DBSpecific.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Local, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Local.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.LocalDBSpecific, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.LocalDBSpecific.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Pivot, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Pivot.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Pivot.DataManagers">
-      <HintPath>..\lib\PV.Data.Pivot.DataManagers.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Pivot.DBSpecific, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Pivot.DBSpecific.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Standard, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
+    <Reference Include="PV.Data.Standard, Version=18.1.356.1208, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\PV.Data.Standard.dll</HintPath>
     </Reference>
-    <Reference Include="PV.Data.Standard.DBSpecific, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
+    <Reference Include="PV.Data.Standard.DBSpecific, Version=18.1.356.1208, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\PV.Data.Standard.DBSpecific.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Data.Web, Version=15.3.9999.1, Culture=neutral, PublicKeyToken=902333a18ab406e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\PV.Data.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Document.Services">
-      <HintPath>..\lib\PV.Document.Services.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.ESign.DataModel">
-      <HintPath>..\lib\PV.ESign.DataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Globals">
-      <HintPath>..\lib\PV.Globals.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Kiosk.DataModel">
-      <HintPath>..\lib\PV.Kiosk.DataModel.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Kiosk.DataModel.POCOs">
-      <HintPath>..\lib\PV.Kiosk.DataModel.POCOs.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Logging">
-      <HintPath>..\lib\PV.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="PV.Partner.DataModel">
-      <HintPath>..\lib\PV.Partner.DataModel.dll</HintPath>
     </Reference>
     <Reference Include="PVImportExport">
       <HintPath>..\lib\PVImportExport.dll</HintPath>
