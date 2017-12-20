@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Timers;
+using System.Diagnostics;
 using System.Linq;
 using Nancy;
 using NancyUtilities;
@@ -48,7 +48,7 @@ namespace MsBilling
         private string _methodAction;
         private string _query;
         private string _requestor;
-        private Timer _timer = new Timer();
+        private Stopwatch _timer ;
         private string _serviceDomainUrl;
 
         private void UpdateActionParams(string methodname, string action)
@@ -67,7 +67,7 @@ namespace MsBilling
                 _serviceDomainUrl = ctx.Request.Url.HostName;
                 _query = ctx.Request.Path;
                 _requestor = ctx.Request.Headers.Referrer;
-                _timer.Start();
+                _timer = Stopwatch.StartNew();
                 return null;
             };
 
@@ -83,7 +83,7 @@ namespace MsBilling
                     _methodAction,
                     _requestor,
                     _query,
-                    _timer.Interval.ToString()
+                    _timer.ElapsedMilliseconds.ToString()
                 );
             };
 

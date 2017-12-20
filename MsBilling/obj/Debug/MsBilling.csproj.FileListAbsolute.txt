@@ -82,7 +82,6 @@ C:\Source\git\MsDev\MsBilling\bin\Debug\DocStorage.External.DataModel.pdb
 C:\Source\git\MsDev\MsBilling\bin\Debug\HL7Entities.pdb
 C:\Source\git\MsDev\MsBilling\obj\Debug\MsBilling.exe
 C:\Source\git\MsDev\MsBilling\obj\Debug\MsBilling.pdb
-C:\Source\DevR&D\MsDev\MsBilling\obj\Debug\MsBilling.csprojResolveAssemblyReference.cache
 C:\Source\DevR&D\MsDev\MsBilling\bin\Debug\MsBilling.exe.config
 C:\Source\DevR&D\MsDev\MsBilling\bin\Debug\MsBilling.exe
 C:\Source\DevR&D\MsDev\MsBilling\bin\Debug\MsBilling.pdb

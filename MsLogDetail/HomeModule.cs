@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Timers;
+using System.Diagnostics;
 using Nancy;
 using Nancy.Responses;
 using NancyUtilities;
 using PV.App.Managers.Standard.Helpers;
 using PV.Data.Standard;
 using PV.Data.Standard.EntityClasses;
-using PV.Data.Standard.HelperClasses;
-using PV.Data.Standard.TypedViewClasses;
 using SD.LLBLGen.Pro.ORMSupportClasses;
 
 namespace MsLogDetail
@@ -52,7 +50,7 @@ namespace MsLogDetail
         private string _methodAction;
         private string _query;
         private string _requestor;
-        private Timer _timer = new Timer();
+        private Stopwatch _timer ;
         private string _serviceDomainUrl;
 
         private void UpdateActionParams(string methodname, string action)
@@ -72,7 +70,7 @@ namespace MsLogDetail
                 _serviceDomainUrl = ctx.Request.Url.HostName;
                 _query = ctx.Request.Path;
                 _requestor = ctx.Request.Headers.Referrer;
-                _timer.Start();
+                _timer= Stopwatch.StartNew();
                 return null;
             };
 
@@ -88,7 +86,7 @@ namespace MsLogDetail
                     _methodAction,
                     _requestor,
                     _query,
-                    _timer.Interval.ToString()
+                    _timer.ElapsedMilliseconds.ToString()
                 );
             };
 
