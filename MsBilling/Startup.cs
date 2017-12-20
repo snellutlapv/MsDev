@@ -7,6 +7,7 @@ using Nancy.Json;
 using Nancy.Owin;
 using Nancy.TinyIoc;
 using Owin;
+using NancyUtilities;
 
 [assembly: OwinStartup(typeof(MsBilling.Startup))]
 namespace MsBilling
@@ -29,6 +30,15 @@ namespace MsBilling
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
         {
             JsonSettings.MaxJsonLength = Int32.MaxValue;
+        }
+        public static void LoadInstanceInfoToDb(string url)
+        {
+            var urlStringParams = url.Split(':');
+            var port = urlStringParams.Length > 2 ? urlStringParams[2] : "0";
+            var sqlSpCmd = "SHMS.dbo.CreateOnlyIfNewServiceInfo";
+            var host = urlStringParams.Length > 1 ? $"{urlStringParams[0]}:{urlStringParams[1]}" : $"Unknown-{Guid.NewGuid()}";
+            var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SHMS"].ConnectionString;
+            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, host, port, "Billing Manager");
         }
     }
 }

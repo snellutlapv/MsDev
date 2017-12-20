@@ -32,14 +32,14 @@ namespace MsPractice
         {
             JsonSettings.MaxJsonLength = Int32.MaxValue;
         }
-
-        protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
+        public static void LoadInstanceInfoToDb(string url)
         {
-            var hostname = context.Request.Url.HostName;
-            var port = context.Request.Url.Port;
+            var urlStringParams = url.Split(':');
+            var port = urlStringParams.Length > 2 ? urlStringParams[2] : "0";
             var sqlSpCmd = "SHMS.dbo.CreateOnlyIfNewServiceInfo";
+            var host = urlStringParams.Length > 1 ? $"{urlStringParams[0]}:{urlStringParams[1]}" : $"Unknown-{Guid.NewGuid()}";
             var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SHMS"].ConnectionString;
-            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, hostname, (port ?? 0).ToString(), "ServicesList");
+            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, host, port, "MsPractice");
         }
     }
 }
