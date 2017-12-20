@@ -41,7 +41,7 @@ namespace MsLogDetail
             var sqlSpCmd = "SHMS.dbo.CreateOnlyIfNewServiceInfo";
             var host = urlStringParams.Length > 1 ? $"{urlStringParams[0]}:{urlStringParams[1]}" : $"Unknown-{Guid.NewGuid()}";
             var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SHMS"].ConnectionString;
-            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, host, port, "ListManager");
+            LogServerInstance.UpdateDbWithServerInfo(connectionString, sqlSpCmd, host, port, "Log Detail");
         }
     }
 }

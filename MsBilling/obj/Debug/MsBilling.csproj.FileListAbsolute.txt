@@ -119,3 +119,4 @@ C:\Source\DevR&D\MsDev\MsBilling\bin\Debug\Nancy.Hosting.Self.xml
 C:\Source\DevR&D\MsDev\MsBilling\bin\Debug\Nancy.Owin.xml
 C:\Source\DevR&D\MsDev\MsBilling\obj\Debug\MsBilling.exe
 C:\Source\DevR&D\MsDev\MsBilling\obj\Debug\MsBilling.pdb
+C:\Source\DevR&D\MsDev\MsBilling\obj\Debug\MsBilling.csprojResolveAssemblyReference.cache
